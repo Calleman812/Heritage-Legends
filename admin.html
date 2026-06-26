@@ -9,7 +9,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:#0d0a06;font-family:'Cinzel',serif;color:#e8d5a3;min-height:100vh;display:flex;align-items:center;justify-content:center}
 .hall-bg{position:fixed;inset:0;background:radial-gradient(ellipse 80% 40% at 50% 0%,#1a0e02 0%,transparent 70%),#0d0a06;pointer-events:none;z-index:0}
-.wrap{position:relative;z-index:1;width:100%;max-width:600px;padding:40px 24px}
+.wrap{position:relative;z-index:1;width:100%;max-width:580px;padding:40px 24px}
 .login-box{background:linear-gradient(160deg,#1e1508,#0f0d08);border:1px solid #4a3010;border-radius:4px;padding:48px 40px;text-align:center}
 .login-box::before{content:'';display:block;width:80px;height:2px;background:linear-gradient(90deg,transparent,#c8a84b,transparent);margin:0 auto 28px}
 .login-title{font-family:'Cinzel Decorative',serif;font-size:22px;color:#f0d060;margin-bottom:8px}
@@ -25,21 +25,10 @@ body{background:#0d0a06;font-family:'Cinzel',serif;color:#e8d5a3;min-height:100v
 .admin-header::before{content:'';display:block;width:80px;height:2px;background:linear-gradient(90deg,transparent,#c8a84b,transparent);margin:0 auto 20px}
 .admin-title{font-family:'Cinzel Decorative',serif;font-size:24px;color:#f0d060;margin-bottom:6px}
 .admin-sub{font-size:11px;color:#8a7040;letter-spacing:3px;text-transform:uppercase}
-
-/* GitHub config box */
-.gh-config{background:#0a0806;border:1px solid #3a2a10;border-radius:3px;padding:16px;margin-bottom:16px}
-.gh-config-title{font-size:9px;color:#8a7040;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid #2a1e08}
-.gh-row{display:flex;gap:8px;margin-bottom:8px}
-.gh-row:last-child{margin-bottom:0}
-.gh-input{flex:1;background:#0d0a06;border:1px solid #3a2a10;color:#e8d5a3;font-family:'Cinzel',serif;font-size:11px;padding:10px 12px;border-radius:2px;outline:none;letter-spacing:1px;transition:border-color .2s}
-.gh-input:focus{border-color:#c8a84b}
-.gh-input::placeholder{color:#3a2a10;font-size:10px;letter-spacing:1px}
-.gh-label{font-size:9px;color:#6a5030;letter-spacing:2px;text-transform:uppercase;margin-bottom:4px}
-
-.drop-zone{border:2px dashed #4a3010;border-radius:4px;padding:44px 24px;text-align:center;cursor:pointer;transition:all .2s;background:#0a0806;position:relative}
+.drop-zone{border:2px dashed #4a3010;border-radius:4px;padding:52px 24px;text-align:center;cursor:pointer;transition:all .2s;background:#0a0806;position:relative}
 .drop-zone:hover,.drop-zone.drag-over{border-color:#c8a84b;background:rgba(200,168,75,0.04)}
-.drop-icon{font-size:36px;margin-bottom:12px;opacity:0.6;display:block}
-.drop-title{font-size:13px;color:#c8a84b;letter-spacing:2px;margin-bottom:5px}
+.drop-icon{font-size:40px;margin-bottom:14px;opacity:0.6;display:block}
+.drop-title{font-size:14px;color:#c8a84b;letter-spacing:2px;margin-bottom:6px}
 .drop-sub{font-size:11px;color:#6a5030;letter-spacing:1px}
 .drop-input{position:absolute;inset:0;opacity:0;cursor:pointer}
 .status-box{margin-top:16px;background:#0a0806;border:1px solid #3a2a10;border-radius:2px;padding:16px;display:none}
@@ -52,22 +41,17 @@ body{background:#0d0a06;font-family:'Cinzel',serif;color:#e8d5a3;min-height:100v
 .status-list li.ok{color:#7a9060}
 .preview-count{font-size:11px;color:#8a7040;letter-spacing:2px;text-align:center;margin-top:12px;display:none;padding:8px;background:#0a0806;border:1px solid #2a1e08;border-radius:2px}
 .action-btns{display:flex;gap:10px;margin-top:14px}
-.btn{flex:1;font-family:'Cinzel',serif;font-size:11px;letter-spacing:2px;padding:13px;cursor:pointer;transition:all .2s;border-radius:2px;text-transform:uppercase;display:none}
+.btn{font-family:'Cinzel',serif;font-size:11px;letter-spacing:2px;padding:13px;cursor:pointer;transition:all .2s;border-radius:2px;text-transform:uppercase;display:none}
 .btn.visible{display:block}
-.btn-preview{background:transparent;border:1px solid #4a3820;color:#8a7040}
+.btn-preview{background:transparent;border:1px solid #4a3820;color:#8a7040;flex:1}
 .btn-preview:hover{border-color:#c8a84b;color:#f0d060}
-.btn-download{background:rgba(100,100,100,0.1);border:1px solid #5a5a5a;color:#aaaaaa}
-.btn-download:hover{background:rgba(100,100,100,0.2)}
-.btn-publish{background:rgba(200,168,75,0.12);border:1px solid #c8a84b;color:#f0d060}
+.btn-publish{background:rgba(200,168,75,0.12);border:1px solid #c8a84b;color:#f0d060;flex:2}
 .btn-publish:hover{background:rgba(200,168,75,0.22)}
 .btn-publish:disabled{opacity:0.4;cursor:not-allowed}
-
-/* Publish status */
-.publish-status{margin-top:12px;padding:12px 16px;border-radius:2px;font-size:11px;letter-spacing:1px;text-align:center;display:none;line-height:1.5}
+.publish-status{margin-top:12px;padding:12px 16px;border-radius:2px;font-size:11px;letter-spacing:1px;text-align:center;display:none;line-height:1.6}
 .publish-status.publishing{background:#0a0a18;border:1px solid #3a3a60;color:#8a8ad0;display:block}
 .publish-status.success{background:#0a1808;border:1px solid #2a5020;color:#80c060;display:block}
 .publish-status.error{background:#180a08;border:1px solid #602020;color:#c06050;display:block}
-
 .logout-btn{margin-top:18px;width:100%;background:transparent;border:1px solid #2a1e08;color:#4a3820;font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;padding:10px;cursor:pointer;transition:all .2s;border-radius:2px}
 .logout-btn:hover{border-color:#5a4030;color:#6a5030}
 </style>
@@ -90,22 +74,6 @@ body{background:#0d0a06;font-family:'Cinzel',serif;color:#e8d5a3;min-height:100v
       <div class="admin-sub">Halls of Legend — Update Roster</div>
     </div>
 
-    <div class="gh-config">
-      <div class="gh-config-title">GitHub Configuration</div>
-      <div class="gh-label">GitHub Username</div>
-      <div class="gh-row">
-        <input class="gh-input" type="text" id="gh-user" placeholder="your-github-username"/>
-      </div>
-      <div class="gh-label">Repository Name</div>
-      <div class="gh-row">
-        <input class="gh-input" type="text" id="gh-repo" placeholder="halls-of-legend"/>
-      </div>
-      <div class="gh-label">Personal Access Token (not stored, session only)</div>
-      <div class="gh-row">
-        <input class="gh-input" type="password" id="gh-token" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx"/>
-      </div>
-    </div>
-
     <div class="drop-zone" id="drop-zone">
       <input type="file" class="drop-input" id="file-input" accept=".xlsx" onchange="handleFile(this.files[0])"/>
       <span class="drop-icon">&#128221;</span>
@@ -121,10 +89,8 @@ body{background:#0d0a06;font-family:'Cinzel',serif;color:#e8d5a3;min-height:100v
 
     <div class="action-btns">
       <button class="btn btn-preview" id="btn-preview" onclick="previewSite()">Preview</button>
-      <button class="btn btn-download" id="btn-download" onclick="downloadSite()">Download</button>
-      <button class="btn btn-publish" id="btn-publish" onclick="publishToGitHub()">&#9654; Publish Live</button>
+      <button class="btn btn-publish" id="btn-publish" onclick="publishToGitHub()">▶ Publish Live</button>
     </div>
-
     <div class="publish-status" id="publish-status"></div>
     <button class="logout-btn" onclick="logout()">Leave the Hall</button>
   </div>
@@ -133,22 +99,36 @@ body{background:#0d0a06;font-family:'Cinzel',serif;color:#e8d5a3;min-height:100v
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <script>
 const STORED_HASH="d17c6818a2e53ac4cdcccfbef18e3976ceceb53423629ad5fe553d961f6a4867";
+const GH_USER="calleman812";
+const GH_REPO="Heritage-Legends";
+const GH_TOKEN="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";
+
 async function sha256(msg){const buf=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(msg));return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');}
-async function checkPw(){const pw=document.getElementById('pw-input').value;const hash=await sha256(pw);if(hash===STORED_HASH){document.getElementById('login-box').style.display='none';document.getElementById('admin-panel').style.display='block';sessionStorage.setItem('hl-auth',hash);}else{document.getElementById('login-error').textContent='The Hall remains sealed. Try again.';document.getElementById('pw-input').value='';}}
-window.addEventListener('load',async()=>{
-  if(sessionStorage.getItem('hl-auth')===STORED_HASH){document.getElementById('login-box').style.display='none';document.getElementById('admin-panel').style.display='block';}
-  // Restore saved github config
-  const u=sessionStorage.getItem('gh-user');const r=sessionStorage.getItem('gh-repo');
-  if(u)document.getElementById('gh-user').value=u;
-  if(r)document.getElementById('gh-repo').value=r;
+
+async function checkPw(){
+  const pw=document.getElementById('pw-input').value;
+  const hash=await sha256(pw);
+  if(hash===STORED_HASH){
+    document.getElementById('login-box').style.display='none';
+    document.getElementById('admin-panel').style.display='block';
+    sessionStorage.setItem('hl-auth',hash);
+  }else{
+    document.getElementById('login-error').textContent='The Hall remains sealed. Try again.';
+    document.getElementById('pw-input').value='';
+  }
+}
+
+window.addEventListener('load',()=>{
+  if(sessionStorage.getItem('hl-auth')===STORED_HASH){
+    document.getElementById('login-box').style.display='none';
+    document.getElementById('admin-panel').style.display='block';
+  }
   const dz=document.getElementById('drop-zone');
   dz.addEventListener('dragover',e=>{e.preventDefault();dz.classList.add('drag-over');});
   dz.addEventListener('dragleave',()=>dz.classList.remove('drag-over'));
   dz.addEventListener('drop',e=>{e.preventDefault();dz.classList.remove('drag-over');handleFile(e.dataTransfer.files[0]);});
-  // Save username/repo to session on input
-  document.getElementById('gh-user').addEventListener('input',e=>sessionStorage.setItem('gh-user',e.target.value));
-  document.getElementById('gh-repo').addEventListener('input',e=>sessionStorage.setItem('gh-repo',e.target.value));
 });
+
 function logout(){sessionStorage.clear();location.reload();}
 
 const CURRENT_DATA=[["June 2026", "Dissa", "Priest", "atiesh"], ["March 2026", "Gnomenjoyer", "Mage", "atiesh"], ["March 2026", "Bensalts", "Paladin", "sulfuras"], ["January 2026", "Nandor", "Priest", "atiesh"], ["November 2025", "Apeline", "Mage", "atiesh"], ["October 2025", "Kastor", "Mage", "atiesh"], ["October 2025", "Awesomex", "Paladin", "sulfuras"], ["September 2025", "Astaria", "Druid", "atiesh"], ["July 2025", "Pregitte", "Priest", "atiesh"], ["July 2025", "Safaa", "Priest", "atiesh"], ["June 2025", "Mallykith", "Mage", "atiesh"], ["May 2025", "Ubii", "Warrior", "thunderfury"], ["May 2025", "Calleman", "Priest", "atiesh"], ["April 2025", "Intecharged", "Warrior", "thunderfury"], ["April 2025", "Grumble", "Priest", "atiesh"], ["February 2025", "Yennefer", "Druid", "atiesh"], ["January 2025", "Naihanchi", "Druid", "atiesh"], ["December 2024", "Zalro", "Warrior", "sulfuras"], ["December 2024", "Nymeria", "Priest", "atiesh"], ["November 2024", "Zalro", "Warrior", "thunderfury"], ["October 2024", "Babyjeane", "Warlock", "atiesh"], ["August 2024", "Kuriel", "Priest", "atiesh"], ["July 2024", "Lightguard", "Paladin", "sulfuras"], ["June 2024", "Sitara", "Mage", "atiesh"], ["April 2024", "Lunma", "Priest", "atiesh"], ["February 2024", "Siniel", "Warlock", "atiesh"], ["January 2024", "Wincey", "Mage", "atiesh"], ["November 2023", "Qwadi", "Warrior", "thunderfury"], ["October 2023", "Yossarin", "Priest", "atiesh"], ["September 2023", "Trebh", "Priest", "atiesh"], ["September 2023", "Methoneiros", "Druid", "atiesh"], ["July 2023", "Guru", "Mage", "atiesh"], ["July 2023", "Zabber", "Warrior", "thunderfury"], ["May 2023", "Bustler", "Warlock", "atiesh"], ["May 2023", "Amatheia", "Warrior", "sulfuras"], ["May 2023", "Liverall", "Priest", "atiesh"], ["April 2023", "Hyp", "Mage", "atiesh"], ["March 2023", "Cyridiana", "Mage", "atiesh"], ["February 2023", "Legss", "Mage", "atiesh"]];
@@ -209,55 +189,44 @@ function showDiff(current,incoming){
   const box=document.getElementById('status-box');
   const list=document.getElementById('status-list');
   box.style.display='block';list.innerHTML='';
-  if(added.length===0&&removed.length===0){list.innerHTML='<li class="ok">&#10003; No changes detected — data is identical to live site</li>';}
-  else{
+  if(added.length===0&&removed.length===0){
+    list.innerHTML='<li class="ok">&#10003; No changes — data is identical to live site</li>';
+  }else{
     added.forEach(d=>{list.innerHTML+='<li class="new">+ Added: <strong>'+d[1]+'</strong> ('+d[2]+') — '+d[0]+' — '+d[3]+'</li>';});
     removed.forEach(d=>{list.innerHTML+='<li class="removed">− Removed: <strong>'+d[1]+'</strong> ('+d[2]+') — '+d[0]+' — '+d[3]+'</li>';});
     if(same.length>0)list.innerHTML+='<li class="ok">&#10003; '+same.length+' existing entr'+(same.length===1?'y':'ies')+' unchanged</li>';
   }
-  const pc=document.getElementById('preview-count');
-  pc.style.display='block';
-  pc.textContent=incoming.length+' total entries in uploaded file';
+  document.getElementById('preview-count').style.display='block';
+  document.getElementById('preview-count').textContent=incoming.length+' total entries in uploaded file';
   document.getElementById('btn-preview').classList.add('visible');
-  document.getElementById('btn-download').classList.add('visible');
   document.getElementById('btn-publish').classList.add('visible');
 }
 
 function previewSite(){if(!parsedData)return;const html=buildSite(parsedData);const blob=new Blob([html],{type:'text/html'});window.open(URL.createObjectURL(blob),'_blank');}
-function downloadSite(){if(!parsedData)return;const html=buildSite(parsedData);const blob=new Blob([html],{type:'text/html'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='index.html';a.click();}
 
 async function publishToGitHub(){
-  const user=document.getElementById('gh-user').value.trim();
-  const repo=document.getElementById('gh-repo').value.trim();
-  const token=document.getElementById('gh-token').value.trim();
   const ps=document.getElementById('publish-status');
-  if(!user||!repo||!token){ps.className='publish-status error';ps.textContent='Please fill in GitHub username, repository name, and token.';return;}
   if(!parsedData){ps.className='publish-status error';ps.textContent='Please upload a spreadsheet first.';return;}
   const btn=document.getElementById('btn-publish');
   btn.disabled=true;
-  ps.className='publish-status publishing';
-  ps.textContent='Connecting to GitHub…';
   try{
-    // 1. Get current file SHA (needed for update)
-    ps.textContent='Fetching current file from GitHub…';
-    const getRes=await fetch('https://api.github.com/repos/'+user+'/'+repo+'/contents/index.html',{headers:{'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json'}});
-    if(!getRes.ok&&getRes.status!==404){throw new Error('GitHub error: '+getRes.status+' — check your username, repo name, and token permissions.');}
+    ps.className='publish-status publishing';ps.textContent='Connecting to GitHub…';
+    const getRes=await fetch('https://api.github.com/repos/'+GH_USER+'/'+GH_REPO+'/contents/index.html',{headers:{'Authorization':'Bearer '+GH_TOKEN,'Accept':'application/vnd.github+json'}});
+    if(!getRes.ok&&getRes.status!==404)throw new Error('GitHub error '+getRes.status+' — check that the repository exists and is accessible.');
     const sha=getRes.ok?(await getRes.json()).sha:undefined;
-    // 2. Build new site HTML
     ps.textContent='Building updated site…';
     const html=buildSite(parsedData);
     const b64=btoa(unescape(encodeURIComponent(html)));
-    // 3. Commit to GitHub
     ps.textContent='Publishing to GitHub…';
     const body={message:'Update legendary roster via admin panel',content:b64};
     if(sha)body.sha=sha;
-    const putRes=await fetch('https://api.github.com/repos/'+user+'/'+repo+'/contents/index.html',{method:'PUT',headers:{'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json','Content-Type':'application/json'},body:JSON.stringify(body)});
+    const putRes=await fetch('https://api.github.com/repos/'+GH_USER+'/'+GH_REPO+'/contents/index.html',{method:'PUT',headers:{'Authorization':'Bearer '+GH_TOKEN,'Accept':'application/vnd.github+json','Content-Type':'application/json'},body:JSON.stringify(body)});
     if(!putRes.ok){const err=await putRes.json();throw new Error(err.message||'Publish failed: '+putRes.status);}
     ps.className='publish-status success';
-    ps.innerHTML='&#10003; Published successfully! Your site will update within 30–60 seconds.<br><a href="https://'+user+'.github.io/'+repo+'/" target="_blank" style="color:#a0e080;letter-spacing:1px">View live site →</a>';
+    ps.innerHTML='&#10003; Published! Site updates in 30–60 seconds.<br><a href="https://'+GH_USER+'.github.io/'+GH_REPO+'/" target="_blank" style="color:#a0e080;letter-spacing:1px">View live site →</a>';
   }catch(err){
     ps.className='publish-status error';
-    ps.textContent='&#10007; '+err.message;
+    ps.textContent='✗ '+err.message;
   }
   btn.disabled=false;
 }
@@ -291,7 +260,7 @@ function buildSite(data){
 </div>
 <div class="atiesh-accordion" id="atiesh-accordion">
 <button class="accordion-toggle" id="accordion-toggle" onclick="toggleAccordion()">
-<div class="accordion-toggle-left"><span class="accordion-icon">&#10022;</span><div><div class="accordion-title">Atiesh Chronicles</div><div class="accordion-sub">Statistics &amp; Insights &mdash; ${data.filter(d=>d[3]==='atiesh').length} Staves Forged</div></div></div>
+<div class="accordion-toggle-left"><span class="accordion-icon">&#10022;</span><div><div class="accordion-title">Atiesh Chronicles</div><div class="accordion-sub">Statistics &amp; Insights — ${data.filter(d=>d[3]==='atiesh').length} Staves Forged</div></div></div>
 <span class="accordion-chevron" id="accordion-chevron">&#9660;</span>
 </button>
 <div class="accordion-body" id="accordion-body">${atieshBody}</div>
@@ -300,10 +269,7 @@ function buildSite(data){
 <div class="grid" id="grid"></div>
 </div>
 <script>
-const ICONS=${iconsJson};
-const DATA=${dataJson};
-const ITEMS=${itemsJson};
-const CC=${ccJson};
+const ICONS=${iconsJson};const DATA=${dataJson};const ITEMS=${itemsJson};const CC=${ccJson};
 document.getElementById('s-all').textContent=DATA.length;
 document.getElementById('s-atiesh').textContent=DATA.filter(d=>d[3]==='atiesh').length;
 document.getElementById('s-thunder').textContent=DATA.filter(d=>d[3]==='thunderfury').length;
